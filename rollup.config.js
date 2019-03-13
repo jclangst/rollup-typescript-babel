@@ -33,12 +33,5 @@ export default {
   }, {
     file: pkg.module,
     format: 'es',
-  }, {
-    file: pkg.browser,
-    format: 'iife',
-    name,
-
-    // https://rollupjs.org/guide/en#output-globals-g-globals
-    globals: {},
-  }],
+  }]
 };

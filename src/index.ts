@@ -1,6 +1,6 @@
 import { Counter } from './counter/counter';
 import { someHelpfulUtilFunction } from './util';
-
+import {isArray} from 'lodash-es';
 
 export interface Props {
   x: number;
@@ -21,6 +21,7 @@ export class Value {
 
   setProps(props: Props) {
     this.props = props;
+    console.log(isArray(props));
   }
 
   getProps(): Props {
